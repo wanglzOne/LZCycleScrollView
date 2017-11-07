@@ -1,0 +1,7 @@
+platform:ios,'8.0'
+ 
+target 'LZCycleScrollView' do
+
+pod 'SDCycleScrollView', '~> 1.73'
+
+end

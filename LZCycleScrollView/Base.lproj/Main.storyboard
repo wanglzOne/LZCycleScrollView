@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oGQ-A0-74x">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umX-Gc-P41">
+                                <rect key="frame" x="107.5" y="144" width="160" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ZbV-qC-t7n"/>
+                                    <constraint firstAttribute="width" constant="160" id="fYK-pK-pnC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="网络图片加载">
+                                    <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9yA-Ji-WS8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1y-5j-fsf">
+                                <rect key="frame" x="107.5" y="229" width="160" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="本地图片加载">
+                                    <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAn-JL-yTr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5k-Ly-35f">
+                                <rect key="frame" x="107.5" y="314" width="160" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="带标题网络图片加载">
+                                    <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CSd-fn-F48"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3x-1u-Yks">
+                                <rect key="frame" x="107.5" y="484" width="160" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="纯文字上下滚动轮播">
+                                    <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EbC-9q-Lk4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyg-70-fKj">
+                                <rect key="frame" x="107.5" y="399" width="160" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="带标题本地图片加载">
+                                    <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUD-k0-OIc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o3x-1u-Yks" firstAttribute="top" secondItem="Vyg-70-fKj" secondAttribute="bottom" constant="25" id="9SZ-gk-w0g"/>
+                            <constraint firstItem="Vyg-70-fKj" firstAttribute="width" secondItem="umX-Gc-P41" secondAttribute="width" id="ELB-6e-4rm"/>
+                            <constraint firstItem="Q5k-Ly-35f" firstAttribute="top" secondItem="q1y-5j-fsf" secondAttribute="bottom" constant="25" id="Udq-vK-118"/>
+                            <constraint firstItem="o3x-1u-Yks" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XdG-pw-a3e"/>
+                            <constraint firstItem="Vyg-70-fKj" firstAttribute="height" secondItem="umX-Gc-P41" secondAttribute="height" id="YBJ-tc-Cf4"/>
+                            <constraint firstItem="umX-Gc-P41" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Z4x-8h-7aZ"/>
+                            <constraint firstItem="Vyg-70-fKj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bcE-ap-SNB"/>
+                            <constraint firstItem="Q5k-Ly-35f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ch8-TB-b27"/>
+                            <constraint firstItem="q1y-5j-fsf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dvA-BV-Bu5"/>
+                            <constraint firstItem="q1y-5j-fsf" firstAttribute="width" secondItem="umX-Gc-P41" secondAttribute="width" id="epa-nJ-YjP"/>
+                            <constraint firstItem="Q5k-Ly-35f" firstAttribute="width" secondItem="umX-Gc-P41" secondAttribute="width" id="hKK-iF-h4c"/>
+                            <constraint firstItem="Q5k-Ly-35f" firstAttribute="height" secondItem="umX-Gc-P41" secondAttribute="height" id="iub-ah-sXM"/>
+                            <constraint firstItem="o3x-1u-Yks" firstAttribute="width" secondItem="umX-Gc-P41" secondAttribute="width" id="ozt-vu-h9T"/>
+                            <constraint firstItem="umX-Gc-P41" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="pl2-nF-0iU"/>
+                            <constraint firstItem="q1y-5j-fsf" firstAttribute="height" secondItem="umX-Gc-P41" secondAttribute="height" id="ueb-2C-4dw"/>
+                            <constraint firstItem="q1y-5j-fsf" firstAttribute="top" secondItem="umX-Gc-P41" secondAttribute="bottom" constant="25" id="vIw-bj-gpf"/>
+                            <constraint firstItem="umX-Gc-P41" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vcm-qI-RGG"/>
+                            <constraint firstItem="o3x-1u-Yks" firstAttribute="height" secondItem="umX-Gc-P41" secondAttribute="height" id="wtf-pc-Oai"/>
+                            <constraint firstItem="Vyg-70-fKj" firstAttribute="top" secondItem="Q5k-Ly-35f" secondAttribute="bottom" constant="25" id="zhY-CG-BbW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ym6-Hi-vH0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="31.934032983508249"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BEH-dD-O5u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oGQ-A0-74x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tIy-eq-fkG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uiw-78-itw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBJ-aC-pIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="31.484257871064472"/>
+        </scene>
+    </scenes>
+</document>
